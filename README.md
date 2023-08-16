@@ -72,7 +72,7 @@ The right wing is nearly as steep as the right one.
 
 
 - ✅ '[17, 17, 15, 14, 8, 7, 7, 5, 4, 4, 1], should return [17, 15, 8, 7, 4, 1, 4, 5, 7, 14, 17]'
-- ⚠ '[20, 7, 6, 2], should return [20, 6, 2, 7]'
+- ✅ '[20, 7, 6, 2], should return [20, 6, 2, 7]'
 - ⚠ '[14, 10, 8], should return [14, 8, 10]'
 - ⚠ '[20, 18, 17, 13, 12, 12, 10, 9, 4, 2, 2, 1, 1], should return [20, 17, 12, 10, 4, 2, 1, 1, 2, 9, 12, 13, 18]'
 - ⚠ '[20, 16, 14, 10, 1], should return [20, 14, 1, 10, 16]'
