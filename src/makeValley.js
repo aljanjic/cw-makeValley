@@ -38,11 +38,7 @@ function makeValley(arr) {
 
   // Loop the sorted array and allocate respective values
   for (let i = 0; i < arr.length; i++){
-    if (i % 2 !== 0){
-      rightWing.push(arr[i])
-    } else {
-      leftWing.push(arr[i])
-    }
+    i % 2 !== 0 ? rightWing.push(arr[i]) : leftWing.push(arr[i]);
   }
 
   // Reverse right array
