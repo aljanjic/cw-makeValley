@@ -31,7 +31,6 @@ function makeValley(arr) {
 
   // Sort array 
   arr.sort((a,b) => b - a);
-  console.log('Sorted: ', arr)
 
   // Create a leftWing and rightWing
   let leftWing = [];
@@ -41,15 +40,16 @@ function makeValley(arr) {
   for (let i = 0; i < arr.length; i++){
     if (i % 2 !== 0){
       rightWing.push(arr[i])
+    } else {
+      leftWing.push(arr[i])
     }
   }
 
   // Reverse right array
-
+  rightWing.reverse()
 
   // Concat the arrays and return them
-
-
+  return leftWing.concat(rightWing)
 
 }
 
