@@ -29,23 +29,30 @@ function makeValley(arr) {
   // return result;
 
 
-  // Sort array 
-  arr.sort((a,b) => b - a);
-
-  // Create a leftWing and rightWing
-  let leftWing = [];
+  let leftWing = []; 
   let rightWing = [];
 
-  // Loop the sorted array and allocate respective values
-  for (let i = 0; i < arr.length; i++){
-    i % 2 !== 0 ? rightWing.push(arr[i]) : leftWing.push(arr[i]);
-  }
+  arr.sort((a, b) => b -a).forEach((el, i) => i % 2 === 0 ? leftWing.push(el) : rightWing.unshift(el) )
 
-  // Reverse right array
-  rightWing.reverse()
+  return [...leftWing, ...rightWing]
 
-  // Concat the arrays and return them
-  return leftWing.concat(rightWing)
+
+
+  // // Sort array 
+  // arr.sort((a,b) => b - a);
+
+  // // Create a leftWing and rightWing
+  // let leftWing = [];
+  // let rightWing = [];
+
+  // // Loop the sorted array and allocate respective values
+  // for (let i = 0; i < arr.length; i++){
+  //   i % 2 !== 0 ? rightWing.push(arr[i]) : leftWing.push(arr[i]);
+  // }
+
+
+  // // Concat the arrays and return them
+  // return leftWing.concat(rightWing.reverse())
 
 }
 
